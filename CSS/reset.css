@@ -1,7 +1,75 @@
 @charset "UTF-8";
 
 /* 기본 값 초기화 */
-* {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -12,8 +80,8 @@
 
 /* 폰트속성, 배경속성, 글자 행간 속성 */
 body {
-    font-family: NanumGothic, 나눔고딕, 'NanumGothic', '맑은 고딕', HelveticaNeue, DroidSans, sans-serif, HElvetica;
-    background: url(/img/s_images/body_bg.png);
+    font-family: NanumGothic, 나눔고딕, 'Nanum Gothic', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    background: url(../images/s_images/body_bg.png);
     line-height: 1;
 }
 
@@ -28,7 +96,7 @@ header,
 hgroup,
 menu,
 nav,
-select {
+section {
     display: block;
 }
 
@@ -64,7 +132,12 @@ input {
     border: 1px solid #e65d5d;
     color: #e65d5d;
     border-radius: 0;
-    font-family: NanumGothic, 나눔고딕, 'NanumGothic', '맑은 고딕', HelveticaNeue, DroidSans, sans-serif, HElvetica;
+    font-family: NanumGothic, 나눔고딕, 'Nanum Gothic', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 input::-moz-input-placeholder {
@@ -78,10 +151,10 @@ input::-webkit-input-placeholder {
 /* 웹 폰트 CSS */
 @font-face {
     font-family: 'Nanum Gothic';
-    src: url(../webFont/NanumGothic.eot);
+    src: url(webfont/NanumGothic.eot)
 }
 
 @font-face {
     font-family: 'Nanum Gothic';
-    src: url(../webFont/NanumGothic.woff);
+    src: url(webfont/NanumGothic.woff)
 }
