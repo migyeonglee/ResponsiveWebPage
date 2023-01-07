@@ -27,7 +27,7 @@
 }
 
 .info_list {
-    display: block;
+    display: flex;
 }
 
 .info_list li {
@@ -113,6 +113,7 @@
     cursor: pointer;
 }
 
+
 /* 태블릿 */
 @media all and (min-width:768px) {
 
@@ -122,6 +123,7 @@
         flex-flow: row wrap;
     }
 
+    /* 헤더 */
     .header {
         flex-direction: row;
     }
@@ -135,6 +137,37 @@
         width: 15.625%;
         padding: 0;
 
+    }
+
+    .logo a {
+        display: block;
+        padding: 50px 0;
+        padding: 3.125rem 0;
+    }
+
+    .nav {
+        position: relative;
+        min-height: 80px;
+        min-height: 5.000rem;
+        background: #2ecc71;
+    }
+
+    .gnb {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 20;
+        /* 308px / 768px */
+        width: 40.10416666666667%;
+    }
+
+    .menu_toggle_bth {
+        top: 50%;
+        right: 30px;
+        right: 1.875rem;
+        z-index: 20;
+        margin: -15px;
+        margin: -0.938rem;
     }
 }
 
@@ -168,6 +201,56 @@
 
     .info_list li a {
         padding: 0;
+    }
+
+    /* 헤더 */
+    .header {
+        order: 1;
+        justify-content: flex-end;
+        position: static;
+    }
+
+    .logo {
+        /* 120px / 960px */
+        width: 12.5%;
+    }
+
+
+    .nav {
+        display: flex;
+        align-items: center;
+        position: static;
+        /* 840px / 960px */
+        width: 87.5%;
+    }
+
+    .gnb {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: 100%;
+        text-shadow: 0px 1px 1px #25ab5e;
+    }
+
+    .gnb li {
+        display: block;
+        margin-left: 5.20833333333333%;
+        background: none;
+
+    }
+
+    .gnb li a {
+        width: auto;
+        padding: 0;
+        text-indent: 0;
+    }
+
+    .gnb li span {
+        display: none;
+    }
+
+    .menu_toggle_bth {
+        display: none;
     }
 
 }
