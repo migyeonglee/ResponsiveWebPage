@@ -286,6 +286,7 @@ span.next_btn {
 
 .banner_box_01 {
     background: #e6567a;
+    height: 50%;
 }
 
 .banner_box_01 a {
@@ -297,11 +298,12 @@ span.next_btn {
 
 .banner_box_02 {
     background: #c44968;
+    height: 50%;
 }
 
 .banner_list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px 12.5%;
     padding: 1.875rem 12.5%;
     /* 40px ÷ 320px */
