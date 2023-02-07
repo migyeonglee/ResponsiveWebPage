@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* 모바일 */
+
+
+/* 태블릿 */
+
+@media all and (min-width:768px) {}
+
+
+/* PC */
+
+@media all and (min-width:960px) {}
