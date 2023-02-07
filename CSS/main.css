@@ -47,77 +47,6 @@
 }
 
 
-/* 헤더 */
-
-.header {
-    display: flex;
-    order: 2;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-}
-
-.logo {
-    order: 1;
-    width: 100%;
-    padding: 30px 0;
-    padding: 1.875rem 0;
-    font-size: 1.188em;
-    font-size: 1.188rem;
-    line-height: 21px;
-    line-height: 1.313rem;
-    text-align: center;
-    text-transform: uppercase;
-    background: #2ecc71;
-    text-shadow: 0px 1px 1px #25ab5e;
-}
-
-.nav {
-    order: 2;
-    width: 100%;
-}
-
-.gnb li {
-    display: flex;
-    background: #2c3e50;
-}
-
-.gnb li a {
-    width: 80%;
-    padding: 20px 0;
-    padding: 1.250rem 0;
-    font-size: 0.938em;
-    font-size: 0.938rem;
-    text-indent: 20px;
-    text-indent: 1.250rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.gnb li span {
-    width: 20%;
-    text-indent: -9999px;
-    background: url(/img/s_images/sub_menu_toggle_btn.png) center center no-repeat;
-    cursor: pointer;
-}
-
-.menu_toggle_bth {
-    display: block;
-    width: 30px;
-    width: 1.875rem;
-    height: 30px;
-    height: 1.875rem;
-    position: absolute;
-    top: 10px;
-    top: 0.625rem;
-    right: 10px;
-    right: 0.625rem;
-    text-indent: -9999px;
-    background: url(/img/s_images/menu_toggle_btn.png) no-repeat;
-    cursor: pointer;
-}
-
-
 /* 슬라이더 영역 */
 
 .slider_section {
@@ -326,27 +255,6 @@ span.next_btn {
 }
 
 
-/* 푸터 영역 CSS */
-
-.footer {
-    order: 10;
-    width: 100%;
-    background: #474747;
-}
-
-.footer p {
-    padding: 20px;
-    padding: 1.250rem;
-    font-size: 0.813em;
-    font-size: 0.813rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 0px 1px 1px #191919;
-}
-
-
 /* 태블릿 */
 
 @media all and (min-width:768px) {
@@ -354,46 +262,6 @@ span.next_btn {
     #wrap {
         /* 가로배치 여러줄 */
         flex-flow: row wrap;
-    }
-    /* 헤더 */
-    .header {
-        flex-direction: row;
-    }
-    .logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        /* 120px / 768px */
-        width: 15.625%;
-        padding: 0;
-    }
-    .logo a {
-        display: block;
-        padding: 50px 0;
-        padding: 3.125rem 0;
-    }
-    .nav {
-        position: relative;
-        min-height: 80px;
-        min-height: 5.000rem;
-        background: #2ecc71;
-    }
-    .gnb {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        z-index: 20;
-        /* 308px / 768px */
-        width: 40.10416666666667%;
-    }
-    .menu_toggle_bth {
-        top: 50%;
-        right: 30px;
-        right: 1.875rem;
-        z-index: 20;
-        margin: -15px;
-        margin: -0.938rem;
     }
     /* 슬라이더 영역 CSS */
     .slider_section {
@@ -491,11 +359,6 @@ span.next_btn {
         margin: 24px 0;
         margin: 1.500rem 0;
     }
-    /* 푸터 영역 CSS */
-    .footer p {
-        padding: 40px 0;
-        padding: 2.500rem 0;
-    }
 }
 
 
@@ -525,46 +388,6 @@ span.next_btn {
     }
     .info_list li a {
         padding: 0;
-    }
-    /* 헤더 */
-    .header {
-        order: 1;
-        justify-content: flex-end;
-        position: static;
-    }
-    .logo {
-        /* 120px / 960px */
-        width: 12.5%;
-    }
-    .nav {
-        display: flex;
-        align-items: center;
-        position: static;
-        /* 840px / 960px */
-        width: 87.5%;
-    }
-    .gnb {
-        display: flex !important;
-        flex-direction: row;
-        position: static;
-        width: 100%;
-        text-shadow: 0px 1px 1px #25ab5e;
-    }
-    .gnb li {
-        display: block;
-        margin-left: 5.20833333333333%;
-        background: none;
-    }
-    .gnb li a {
-        width: auto;
-        padding: 0;
-        text-indent: 0;
-    }
-    .gnb li span {
-        display: none;
-    }
-    .menu_toggle_bth {
-        display: none;
     }
     /* 슬라이더 영역 CSS */
     .slider_section {
@@ -647,14 +470,5 @@ span.next_btn {
         order: 8;
         width: 17.08333333333333%;
         /* 164px ÷ 960px */
-    }
-    /* 푸터 영역 CSS */
-    .footer {
-        order: 9;
-    }
-    .footer p {
-        padding-left: 3.125%;
-        /* 30px ÷ 960px */
-        text-align: left;
     }
 }
