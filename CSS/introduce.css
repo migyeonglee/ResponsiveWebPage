@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* 모바일 */
+
+
+/* 콘텐츠 영역 CSS */
+
+.content_section {
+    order: 4;
+    padding: 20px;
+    padding: 1.250rem;
+    background: #fff;
+}
+
+.content_section>div {
+    margin-top: 60px;
+    margin-top: 3.750rem;
+}
+
+.content_section>div:first-child {
+    margin-top: 0;
+}
+
+.content_row_1 {
+    text-align: center;
+}
+
+.content_row_1 img {
+    max-width: 100%;
+}
+
+.content_row_1 h3 {
+    margin: 26px 0 14px 0;
+    margin: 1.625rem 0 0.875rem 0;
+    font-size: 1.626em;
+    font-size: 1.626rem;
+    color: #333;
+}
+
+.content_row_1 p {
+    font-size: 0.938em;
+    font-size: 0.938rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    color: #444;
+}
+
+.content_row_2>article {
+    margin-top: 40px;
+    margin-top: 2.500rem;
+    text-align: center;
+}
+
+.content_row_2>article:first-child {
+    margin-top: 0;
+}
+
+.content_row_2 img {
+    max-width: 100%;
+}
+
+.content_row_2 h4 {
+    margin: 26px 0 14px 0;
+    margin: 1.625rem 0 0.875rem 0;
+    font-size: 1.188em;
+    font-size: 1.188rem;
+    color: #333;
+}
+
+.content_row_2 p {
+    font-size: 0.813em;
+    font-size: 0.813rem;
+    line-height: 21px;
+    line-height: 1.313rem;
+    color: #444;
+}
+
+.content_row_3 h4 {
+    margin-bottom: 20px;
+    margin-bottom: 1.250rem;
+    padding-bottom: 8px;
+    padding-bottom: 0.500rem;
+    font-size: 1.188em;
+    font-size: 1.188rem;
+    border-bottom: 3px solid #2ecc71;
+    color: #333;
+}
+
+.para p:first-child {
+    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
+}
+
+.para p {
+    font-size: 0.813em;
+    font-size: 0.813rem;
+    line-height: 21px;
+    line-height: 1.313rem;
+    color: #444;
+}
+
+
+/* 태블릿 */
+
+@media all and (min-width:768px) {
+    /* 콘텐츠 영역 CSS */
+    .content_section>div {
+        margin-top: 120px;
+        margin-top: 7.500rem;
+    }
+}
+
+
+/* PC */
+
+@media all and (min-width:960px) {
+    /* 콘텐츠 영역 CSS */
+    .content_row_2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content_row_2 article {
+        width: 30%;
+    }
+    .para {
+        display: flex;
+        justify-content: space-between;
+    }
+    .para p {
+        width: 47.61904761904762%;
+        /* 400px ÷ 840px */
+        margin: 0;
+    }
+}
